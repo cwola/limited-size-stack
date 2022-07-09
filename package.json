@@ -11,6 +11,16 @@
     "tsc": "tsc"
   },
   "author": "r-jimbo",
+  "keywords": [
+    "cwola",
+    "lifo",
+    "stack",
+    "structures",
+    "javascript",
+    "js",
+    "typescript",
+    "ts"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
