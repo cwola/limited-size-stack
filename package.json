@@ -1,0 +1,40 @@
+{
+  "name": "@cwola/limited-size-stack",
+  "version": "1.0.0",
+  "description": "Providing limited size stack for TypeScript.",
+  "main": "dist/src/stack.js",
+  "scripts": {
+    "lint": "eslint --ext js --ext ts --quiet ./src/",
+    "prepare": "npm run build:src",
+    "build:src": "npm run tsc:run",
+    "tsc:run": "tsc -d",
+    "tsc": "tsc"
+  },
+  "author": "r-jimbo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwola/limited-size-stack.git"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/src/stack.js",
+      "import": "./dist/src/stack.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-config-google": "0.14.0",
+    "tsd": "0.21.0",
+    "typescript": "4.7.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
