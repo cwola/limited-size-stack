@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --ext js --ext ts --quiet ./src/",
     "prepublishOnly": "npm run build:src",
-    "build:src": "tsc:run",
+    "build:src": "npm run tsc:run",
     "tsc:run": "tsc -d",
     "tsc": "tsc"
   },
