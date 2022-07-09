@@ -1,6 +1,6 @@
 {
   "name": "@cwola/limited-size-stack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Providing limited size stack for TypeScript.",
   "main": "dist/src/stack.js",
   "scripts": {
