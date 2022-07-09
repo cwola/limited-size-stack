@@ -31,11 +31,11 @@ STACK.push('six');
 console.log(STACK.top());
 // output : 'six'
 
-STACK.rotate(ROTATE.RIGHT);
-// STACK : ['two', 'three', 'four', 'six', 'five']
+STACK.rotate(ROTATE.RIGHT, 0);
+// STACK : ['six', 'two', 'three', 'four', 'five']
 
 STACK.dup();
-// STACK : ['three', 'four', 'six', 'five', 'five']
+// STACK : ['two', 'three', 'four', 'five', 'five']
 ```
 
 ## Method
