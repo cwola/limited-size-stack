@@ -68,7 +68,7 @@ STACK.dup();
 
     | Name | Type | Description |
     |---|:---:|---|
-    | ...elements | Array`<any>` | input elements. |
+    | ...elements | any[] | input elements. |
 
   - Return
 
@@ -490,7 +490,7 @@ STACK.dup();
 
     | Type | Description |
     |:---:|---|
-    | Array`<any>` | array. |
+    | any[] | array. |
 
   - example
     ```

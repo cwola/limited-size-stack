@@ -15,7 +15,7 @@ export class Stack {
     /**
      * stack.
      */
-    protected stack: Array<any>;
+    protected stack: any[];
 
     /**
      * Maximum capacity of this stack.
@@ -54,7 +54,7 @@ export class Stack {
      *
      * ```
      *
-     * @param {Array<any>} ...elements - input elements.
+     * @param {any[]} ...elements - input elements.
      * @return {number} The new number of elements in the stack.
      */
     push(...elements: any[]): number {
@@ -493,11 +493,11 @@ export class Stack {
      *
      * ```
      *
-     * @return {Array<any>} array.
+     * @return {any[]} array.
      *
      * @public
      */
-    toArray(): Array<any> {
+    toArray(): any[] {
         return this.stack.concat();
     }
 }
