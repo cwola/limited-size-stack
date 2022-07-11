@@ -8,8 +8,6 @@ export type ROTATE = typeof ROTATE[keyof typeof ROTATE];
 
 /**
  * A stack with a maximum capacity.
- *
- * @public
  */
 export class Stack {
     /**
@@ -28,6 +26,8 @@ export class Stack {
      * @param {number} capacity - The maximum capacity of the stack.
      *
      * @throws Error
+     *
+     * @public
      */
     constructor(capacity: number) {
         this.stack = [];
@@ -56,6 +56,8 @@ export class Stack {
      *
      * @param {any[]} ...elements - input elements.
      * @return {number} The new number of elements in the stack.
+     *
+     * @public
      */
     push(...elements: any[]): number {
         if (this.capacity === 0) {
