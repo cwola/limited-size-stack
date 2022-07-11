@@ -235,7 +235,7 @@ STACK.dup();
     stack.at(1);  // returns 'two'
     // stack : ['one', 'two', 'three']
 
-    stack.at(-2);  // returns 'two'
+    stack.at(-1);  // returns 'three'
     // stack : ['one', 'two', 'three']
     ```
 
@@ -301,7 +301,7 @@ STACK.dup();
     Rotate the topmost n items to move on the stack.<br>
     <br>
     The n topmost items are moved on the stack in a rotating fashion.<br>
-    'n' is the number of elements to rotate (but if you specify '0', the target will be all elements).<br>
+    'n' is the number of elements to rotate (but if you specify '0' or negative number, the target will be all elements).<br>
     so, if you specify '2', it becomes 'swap'.<br>
     <br>
     Two variants of this operation are possible, left rotate and right rotate.
@@ -311,7 +311,7 @@ STACK.dup();
     | Name | Type | Description |
     |---|:---:|---|
     | direction | ROTATE | ROTATE.RIGHT or ROTATE.LEFT |
-    | n | number | number of elements to rotate |
+    | n | number | number of elements to rotate<br>[optional] default:0 |
 
   - Return
 
@@ -325,10 +325,10 @@ STACK.dup();
     stack.push('one', 'two', 'three');
     // stack : ['one', 'two', 'three']
 
-    stack.rotate(ROTATE.RIGHT, 0);  // returns 'two'
+    stack.rotate(ROTATE.RIGHT);  // returns 'two'
     // stack : ['three', 'one', 'two']
 
-    stack.rotate(ROTATE.LEFT, 2);  // returns 'three'
+    stack.rotate(ROTATE.LEFT);  // returns 'three'
     // stack : ['one', 'two', 'three']
     ```
 
@@ -432,7 +432,7 @@ STACK.dup();
 
     | Type | Description |
     |:---:|---|
-    | Stack | this. |
+    | this | this. |
 
   - example
     ```
