@@ -299,10 +299,10 @@ export class Stack {
      * stack.push('one', 'two', 'three');
      * // stack : ['one', 'two', 'three']
      *
-     * stack.rotate(ROTATE.RIGHT, 0);  // returns 'two'
+     * stack.rotate(ROTATE.RIGHT);  // returns 'two'
      * // stack : ['three', 'one', 'two']
      *
-     * stack.rotate(ROTATE.LEFT, 2);  // returns 'three'
+     * stack.rotate(ROTATE.LEFT);  // returns 'three'
      * // stack : ['one', 'two', 'three']
      *
      *
