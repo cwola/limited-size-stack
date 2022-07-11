@@ -17,13 +17,13 @@ export class Stack {
 
     /**
      * Maximum capacity of this stack.
-     * If you specify a negative number, the capacity is unlimited.
      */
     protected capacity: number;
 
 
     /**
      * @param {number} capacity - The maximum capacity of the stack.
+     * If you specify a negative number, the capacity is unlimited.
      *
      * @throws Error
      *
