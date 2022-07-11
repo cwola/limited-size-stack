@@ -311,7 +311,7 @@ STACK.dup();
     | Name | Type | Description |
     |---|:---:|---|
     | direction | ROTATE | ROTATE.RIGHT or ROTATE.LEFT |
-    | n | number | number of elements to rotate<br>[optional] default:0 |
+    | n | number | number of elements to rotate<br>[optional] default : 0 |
 
   - Return
 
