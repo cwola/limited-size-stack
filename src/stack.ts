@@ -197,6 +197,9 @@ export class Stack {
      * stack.at(1);  // returns 'two'
      * // stack : ['one', 'two', 'three']
      *
+     * stack.at(-1);  // returns 'three'
+     * // stack : ['one', 'two', 'three']
+     *
      *
      * ```
      *
@@ -280,7 +283,7 @@ export class Stack {
      * The n topmost items are moved on the stack in a rotating fashion.
      *
      * 'n' is the number of elements to rotate
-     * (but if you specify '0', the target will be all elements).
+     * (but if you specify '0' or negative number, the target will be all elements).
      * so, if you specify '2', it becomes 'swap'.
      *
      * For example, if n = 3, items 1, 2, and 3 on the stack
@@ -311,7 +314,7 @@ export class Stack {
      *
      * @public
      */
-    rotate(direction: ROTATE, n: number): any|undefined {
+    rotate(direction: ROTATE, n: number = 0): any|undefined {
         if (!Number.isInteger(n) || this.isEmpty()) {
             return undefined;
         }
@@ -319,7 +322,7 @@ export class Stack {
             // right rotate is default.
             direction = ROTATE.RIGHT;
         }
-        if (n === 0 || n < 0) {
+        if (n <= 0) {
             n = this.size();
         }
         if (n === 1) {
@@ -443,7 +446,7 @@ export class Stack {
      *
      * @public
      */
-    clear(): Stack {
+    clear(): this {
         this.stack = [];
         return this;
     }
