@@ -1,10 +1,10 @@
 
 
-const ROTATE = {
+export const ROTATE = {
     RIGHT: 0,
     LEFT: 1,
 } as const;
-export type ROTATE = typeof ROTATE[keyof typeof ROTATE];
+declare type ROTATE = typeof ROTATE[keyof typeof ROTATE];
 
 /**
  * A stack with a maximum capacity.
