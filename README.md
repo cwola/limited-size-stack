@@ -31,7 +31,7 @@ STACK.push('six');
 console.log(STACK.top());
 // output : 'six'
 
-STACK.rotate(ROTATE.RIGHT, 0);
+STACK.rotate(ROTATE.RIGHT);
 // STACK : ['six', 'two', 'three', 'four', 'five']
 
 STACK.dup();
