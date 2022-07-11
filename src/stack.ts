@@ -283,7 +283,8 @@ export class Stack {
      * The n topmost items are moved on the stack in a rotating fashion.
      *
      * 'n' is the number of elements to rotate
-     * (but if you specify '0' or negative number, the target will be all elements).
+     * (but if you specify '0' or negative number,
+     * the target will be all elements).
      * so, if you specify '2', it becomes 'swap'.
      *
      * For example, if n = 3, items 1, 2, and 3 on the stack
