@@ -505,6 +505,6 @@ STACK.dup();
     ```
 
 
-## Licence
+## License
 
-[MIT](https://github.com/cwola/npm-limited-capacity-stack/blob/main/LICENSE)
+[MIT](https://github.com/cwola/limited-size-stack/blob/main/LICENSE)
