@@ -1,10 +1,10 @@
 # limited-size-stack
 
-Providing limited size stack for JS.
+Providing limited size stack for JS (& TypeScript).
 
 ## Overview
 
-Providing limited size stack for JS.
+Providing limited size stack for JS (& TypeScript).
 
 ## Installation
 
